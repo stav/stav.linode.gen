@@ -15,7 +15,7 @@ system.  Canonical, the company who releases Ubuntu, does so every six months,
 in April and October; therefore, version 19.04 was released in April 2019.
 
 My system
-: Lenovo Yogo 2 Pro x86_64 Grub GNU Debian Ubuntu 18.10 Cosmic Cuttlefish
+: Lenovo Yogo 2 Pro x86_64 Grub GNU Debian Ubuntu 19.04 Disco Dingo
 
 Normally I like to install every new Ubuntu release for the following reasons:
 
@@ -47,7 +47,7 @@ Partition information is important when using a custom install.
 
 Note: You are going to have to backup your current files to another partition
 like I did or you could use an external drive or USB stick.  I keep my Bash
-files in a GitHub repo, see [Dotfiles] below.
+files in a GitHub repo, see [Bash](#bash) below.
 
 The main things I backed up were:
 
