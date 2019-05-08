@@ -285,8 +285,8 @@ So I installed the [extended version]
 #### Clone Repository
 
     $ mkdir -p ~/Work/stav/Hugo
-    $ git clone git@github.com:stav/stav.linode.gen.git ~/Work/stav/Hugo/steven.michael
-    $ git clone git@github.com:gcushen/hugo-academic.git /home/stav/Work/stav/Hugo/steven.michael/themes/academic
+    $ git clone git@github.com:stav/steven.michael.git ~/Work/stav/Hugo/steven.michael
+    $ git submodule update
 
 ### Slack
 
