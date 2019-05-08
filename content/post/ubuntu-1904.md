@@ -286,7 +286,7 @@ So I installed the [extended version]
 
     $ mkdir -p ~/Work/stav/Hugo
     $ git clone git@github.com:stav/steven.michael.git ~/Work/stav/Hugo/steven.michael
-    $ git submodule update
+    $ git submodule update --init --recursive
 
 ### Slack
 
