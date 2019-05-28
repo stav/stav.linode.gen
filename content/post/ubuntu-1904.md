@@ -298,20 +298,32 @@ Add settings in Thunderbird setup
 
 ### Development
 
-    $ sudo apt install git git-extras meld tree
+    $ sudo apt install build-essential libsqlite3-dev sqlite3 bzip2 libbz2-dev zlib1g-dev libssl-dev openssl libgdbm-dev libgdbm-compat-dev liblzma-dev libreadline-dev libncursesw5-dev libffi-dev uuid-dev
     $ sudo apt install python3-pip python3-venv virtualenvwrapper
+    $ sudo apt install git git-extras meld tree
 
     $ python3
     Python 3.7.3 (default, Apr  3 2019, 05:39:12)
 
-#### Pipenv
+#### Poetry
 
-https://pipenv.readthedocs.io/en/latest/install/#installing-pipenv
+Based on an [article][njs] I read about what Nathaniel Smith posted in his blog,
+I had a bad taste in my mouth when I thought about using *Pipenv* as the package
+management system for a new project; so; I went to look for something else and
+that is when I read what Sébastien Eustace [said][ses] about *Pipenv*:
 
-    $ pip install --user pipenv
+[njs]: <https://vorpus.org/blog/why-im-not-collaborating-with-kenneth-reitz>
+[ses]: <s://github.com/sdispater/poetry#what-about-pipenv>
 
-Note: after installing `pipenv` you will need to make sure that the user install
-location (`~/.local/bin`) is in the path, easiest way is to logout/login
+> "I do not like the CLI it provides, or some of the decisions made"
+
+Since *Poetry* makes use of `pyproject.toml` files I thought I'd give it a go.
+
+> "Poetry is a tool for dependency management and packaging in Python"
+
+[Installation](https://poetry.eustace.io/docs/#installation):
+
+    $ curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
 
 ### Applications
 
