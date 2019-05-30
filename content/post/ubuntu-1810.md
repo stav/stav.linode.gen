@@ -250,8 +250,16 @@ location (`~/.local/bin`) is in the path, easiest way is to logout/login
 
 https://github.com/creationix/nvm/blob/master/README.md#installation
 
+This will update your `.bashrc`
+
 ```bash
 $ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+```
+
+Open a new terminal, or else you can setup the environment variable manually
+which the installer will explain how to do.
+
+```bash
 $ nvm --version
     0.33.11
 ```

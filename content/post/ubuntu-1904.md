@@ -325,6 +325,52 @@ Since *Poetry* makes use of `pyproject.toml` files I thought I'd give it a go.
 
     $ curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
 
+#### Node
+
+##### Install nvm
+
+https://github.com/creationix/nvm/blob/master/README.md#installation
+
+This will update your `.bashrc`
+
+```bash
+$ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+```
+
+Open a new terminal, or else you can setup the environment variable manually
+which the installer will explain how to do.
+
+```bash
+$ nvm --version
+    0.34.0
+```
+
+##### Install node
+
+```bash
+$ nvm ls-remote |tail
+
+       v11.15.0
+        v12.3.0
+        v12.3.1
+
+$ nvm install 12 --latest-npm
+
+Downloading and installing node v12.3.1...
+Downloading https://nodejs.org/dist/v12.3.1/node-v12.3.1-linux-x64.tar.xz...
+Computing checksum with sha256sum Checksums matched!
+Now using node v12.3.1 (npm v6.9.0)
+Creating default alias: default -> 12 (-> v12.3.1)
+```
+
+```bash
+$ node -v
+v12.3.1
+
+$ npm -v
+6.9.0
+```
+
 ### Applications
 
     $ sudo apt install chromium-browser gimp mpv
