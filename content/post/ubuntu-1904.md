@@ -371,6 +371,22 @@ $ npm -v
 6.9.0
 ```
 
+##### Install yarn
+
+https://yarnpkg.com/en/docs/install#debian
+
+```bash
+
+$ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+$ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+$ sudo apt-get update && sudo apt-get install --no-install-recommends yarn
+```
+
+```bash
+$ yarn -v
+1.16.0
+```
+
 ### Applications
 
     $ sudo apt install chromium-browser gimp mpv
